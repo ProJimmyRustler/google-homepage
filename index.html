@@ -39,23 +39,83 @@
             width: 71px;
             border-radius: 2px;
         }
+        .doodle {
+            height: 200px;
+            width: 570px;
+            padding-top: 82px;
+            margin: 0px auto;
+        }
+        .searchbar {
+            width: 590px;
+            height: 45px;
+            border: .5px solid #fff;
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 2px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        }
+        .searchbuttons {
+            color:#757575;
+            background-color:#f2f2f2;
+            border-color: #f2f2f2;
+            border: 1px;
+            padding: 0px 16px 0px 16px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+        .foot {
+            background-color: #f2f2f2;
+            height: 40px;
+            width: 100%;
+            position: absolute;
+            bottom:0px;
+        }
     </style>
 
-    <head>
-        <div class="float-left">
-            <a href="#" id="a">About</a>
-            <a href="#" style="padding-left: 15px;" id="b">Store</a>
-        </div>
-        <div class="float-right">
-            <a href="#">Gmail</a>
-            <a href="#" style="padding-left: 15px; padding-right: 15px;">Images</a>
-            <button type="button" class="signin">Sign in</button>
-        </div>
-    </head>
-
     <body>
+        <div>
+            <div class="float-left">
+                <a href="#" id="a">About</a>
+                <a href="#" style="padding-left: 15px;" id="b">Store</a>
+            </div>
+    
+            <div class="float-right">
+                <a href="#" id="c">Gmail</a>
+                <a href="#" style="padding-left: 15px; padding-right: 15px;" id="d">Images</a>
+                <button type="button" class="signin">Sign in</button>
+            </div>
+        </div>
+
+        <div class="doodle">
+            <img src="https://media.giphy.com/media/6KigyAQmvV4yscc1qP/giphy.gif" alt="googledoodle">
+
+            <div>
+                <form>
+                    <input type="text" class="searchbar">
+                </form>
+            </div>
+
+            <div style="text-align: center; padding-top: 15px; margin-left: 5px; margin-right: 5px;">
+                <form>
+                    <button type="button" class="searchbuttons" style="height: 36px; width: 126px;">Google Search</button>
+                    <button type="button" class="searchbuttons" style="height: 36px; width: 144px;">I'm Feeling Lucky</button>
+                </form>
+            </div>
+        </div>
     </body>
 
     <footer>
+        <div class="foot">
+            <div class="float-left">
+                    <a href="#" id="a">Advertising</a>
+                    <a href="#" style="padding-left: 15px;" id="b">Business</a>
+            </div>
+            <div class="float-right">
+                <a href="#">Privacy</a>
+                <a href="#" style="padding-left: 15px;" id="c">Terms</a>
+                <a href="#" style="padding-left: 15px; padding-right: 15px;" id="d">Settings</a>
+            </div>
+        </div>
     </footer>
 </html>
